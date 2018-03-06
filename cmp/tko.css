@@ -1,0 +1,7 @@
+a[href*="action=chasenpc"] { font-size: 26px; }
+a[href*="action=slapuser"] { font-size: 0px; }
+a[href*="action=attackuser"]	{ font-size: 500px; }
+a[href*="action=attackuser&attmode=1"]	{ font-size: 13px!important; }
+a[href*="action=attackmenu"]	{ font-size: 26px; }
+a.fastattack	{ font-size: 26px; }
+a[href*="action=take"]	{ font-size: 26px; }

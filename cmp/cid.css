@@ -1,0 +1,66 @@
+/* Inventarver?nderungen (CID)*/
+
+	p.listitemrow 							{ position: relative; padding: 2px 4px 3px 4px; font-size: 1px; color: transparent; border: 1px solid #BABABA; }
+	p.listitemrow:hover 						{ padding: 2px 65px 3px 4px; }
+	p.listitemrow + p 						{ margin-top: 3px; }
+	
+	/* inv pics */
+	p.listitemrow a[href*="action=activate"] 			{ display: block; height: 0px; margin: -2px 0px 0px 300px; }
+	p.listitemrow:hover a[href*="action=activate"]:before 		{ content: url(../images/act.png); position: absolute; top: 2px; right: 50px; opacity: 0.80; }
+	p.listitemrow:hover a[href*="action=activate"]:hover:before 	{ opacity: 1.00; }
+	
+	p.listitemrow a[href*="action=watch"] 			{ display: block; height: 0px; margin: -2px 0px 0px 300px; }
+	p.listitemrow:hover a[href*="action=watch"]:before 		{ content: url(../images/icon_view.gif); position: absolute; top: 2px; right: 35px; opacity: 0.80; }
+	p.listitemrow:hover a[href*="action=watch"]:hover:before 	{ opacity: 1.00; }
+	
+	p.listitemrow a[href*="action=manydrop"] 			{ display: block; height: 0px; margin: -2px 0px 0px 300px; }
+	p.listitemrow:hover a[href*="action=manydrop"]:before 		{ content: url(../images/icon_drop.gif); position: absolute; top: 2px; right: 24px; opacity: 0.80; }
+	p.listitemrow:hover a[href*="action=manydrop"]:hover:before 	{ opacity: 1.00; }
+	
+	p.listitemrow a[href*="action=transfer1"] 			{ display: block; height: 0px; margin: -2px 0px 0px 300px; }
+	p.listitemrow:hover a[href*="action=transfer1"]:before 		{ content: url(../images/icon_transfer.gif); position: absolute; top: 2px; right: 10px; opacity: 0.80; }
+	p.listitemrow:hover a[href*="action=transfer1"]:hover:before 	{ opacity: 1.00; }
+	
+	p.listitemrow a[href*="action=manytransfer1"] 			{ display: block; height: 0px; margin: -2px 0px 0px 300px; }
+	p.listitemrow:hover a[href*="action=manytransfer1"]:before 		{ content: url(../images/icon_transfer.gif); position: absolute; top: 2px; right: 10px; opacity: 0.80; }
+	p.listitemrow:hover a[href*="action=manytransfer1"]:hover:before 	{ opacity: 1.00; }
+	
+
+	
+
+	
+	
+	p.listitemrow b 						{ font-size: 11px; color: #000000; }
+	.itemamount 							{ font-size: 11px; margin-right: 1px; }
+	.itemmagic 							{ font-size: 11px; margin-left: 1px; }
+	.itemequipped b 						{ color: #D20000 !important; }
+	p.listitemrow .iteminventorypics 				{ max-height: 14px; opacity: 0.80; }
+	p.listitemrow .iteminventorypics:hover 				{ opacity: 1.00; }
+/* 	p.listitemrow img[src$="icon_transfer.gif"] 			{ display: none; }
+	p.listitemrow img[src$="icon_drop.gif"] 			{ display: none; }
+	p.listitemrow img[src$="icon_view.gif"] 			{ display: none; } */
+/* 	p.listitemrow:hover img[src$="icon_transfer.gif"] 		{ display: inline-block; position: absolute; top: 3px; right: 2px; }
+	p.listitemrow:hover img[src$="icon_drop.gif"] 			{ display: inline-block; position: absolute; top: 4px; right: 16px; }
+	p.listitemrow:hover img[src$="icon_view.gif"] 			{ display: inline-block; position: absolute; top: 4px; right: 28px; } */
+	p.listitemrow span.medium 					{ font-size: 1px; color: transparent; }
+	p.listitemrow span.medium a 					{ font-size: 1px; color: #FF0000; display: block; height: 0px; margin: -2px 0px 0px 300px; }
+	#filterrow 							{ padding: 2px; }
+	#filterrow b 							{ font-size: 10px; }
+	#filterrow:before 						{ color: #5E5E5E; }
+	
+	
+	/* cid new */
+	
+/* 	.listitemrow a[href^="item.php?action=activate"] {
+	display: inline-block;
+width: 8px;
+overflow: hidden;
+white-space: nowrap;
+font-weight: bold;
+position: relative;
+top: 4px;
+content:"(A)";
+	}
+	.listitemrow a[href^="item.php?action=activate"]:before {
+
+	} */

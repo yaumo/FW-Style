@@ -1,0 +1,886 @@
+@import "items.css";
+@import "./cmp/ans.css";
+@import "./cmp/vti.css";
+@import "./cmp/cnr.css";
+@import "./cmp/smn.css";
+@import "./cmp/cid.css";
+
+
+#puzzle .floater {
+    background-image: url("images/puzzle.png");
+}
+/* Freewar.de StyleSheet Cold Sunfire v1.0 - (C) 2004 - Aenderungen vorbehalten */
+/* global */
+	p,ul,ol,div,td,span,layer,table,body	 
+				{ font-family: Arial, helvetica, sans-serif; font-size: 12px; color: #222222; }
+	p 			{ margin: 0px; padding: 0px; }
+
+/* body */
+	body 			{ background-color: #ffffff; margin: 0px; }
+
+/* table */
+	table 			{ border:0px; border-collapse: collapse; } /* cellspacing & cellpadding & border =0 no longer needed
+	td 			{ padding:0px; margin:0px; }
+
+/* scrollbars */
+/* body, textarea 		{ scrollbar-base-color:#BBBBBB; scrollbar-3dlight-color:#FFFFFF; scrollbar-arrow-color:#007F9F; scrollbar-darkshadow-color:#999999; scrollbar-face-color:#D5D5D5; scrollbar-highlight-color:#FFFFFF; scrollbar-shadow-color:#636363; scrollbar-track-color:#F5F5F5; } */
+
+/* links */
+	a:link 			{ color:#CC3300; text-decoration:none; font-weight:bold; }
+	a:visited 		{ color:#CC3300; text-decoration:none; font-weight:bold; }
+	a:active 		{ color:#FF3300; text-decoration:hover; font-weight:bold; }
+	a:hover 		{ color:#FF3300; text-decoration:underline; font-weight:bold; }
+
+/* fonts */
+	h1 			{ font-size:12px; font-weight:bold; margin-bottom: 0px;}
+	.medium 		{ font-size:11px; }
+	.small 			{ font-size:10px; }
+/* colors */
+	.fontcolor 		{ color: #555555; }
+	.white 			{ color: #ffffff; }
+
+/* bgcolors */
+	.body 			{ background-color: #FFFFFF; }
+	.divider 		{ background-color: #555555; }
+	.outline 		{ background-color: #999999; }
+	.menubg			{ background-color: #F1F1F1; }
+	.brightbg		{ background-color: #E5E5E5; }
+	.verybrightbg		{ background-color: #F1F1F1; }
+	.reallybrightbg		{ background-color: #FAFAFA; }
+	.whitebg		{ background-color: #FFFFFF; }
+	.blackbg 		{ background-color: #000000; }
+	.brownbg 		{ background-color: #E1D8D1; }
+
+/* forms */
+	.registerinput 	 	{ width: 100%; font-size: 10px; }
+	.registersubmit  	{ font-size: 10px; }
+	.logininput 	 	{ width: 100%; font-size: 10px; }
+	.loginsubmit		{ width: 100%; font-size: 10px; }
+
+/* forms */
+	.input 			{ font-size: 11px; background-color: #FFECD3; height: 17px; border: 1px solid #C85424; }
+	textarea		{ font-size: 12px; background-color: #FFECD3; border: 1px solid #C85424; }
+	select 			{ font-size: 11px; background-color: #DBEBEF; }
+
+/* chat buttons */
+.submitsagen {
+    background-image: url("images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 80px;
+}
+.submitclan {
+    background-image: url("images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #D20000;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 80px;
+}
+.submitschreien {
+    background-image: url("images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #004DA7;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 87px;
+}
+.submitgroup {
+    background-image: url("images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #E36B30;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 80px;
+}
+.submitwhisper {
+    background-image: url("../images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #006600;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 88px;
+}
+.submitglobalchat 	{
+    background-image: url("images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #6e621e;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 80px;
+}
+
+
+
+/* banner stuff */
+	.bannerad 		{ border: 1px solid #C85424; }
+	.framebannerbg 		{ background-color: #C85424; background-image: url(images/bannerbg2.jpg); border-bottom: 1px solid #000000; }
+	.framebannerbg::after{top:0;left:0;position:absolute;content:url("http://freewar.zocker.eu/grafik.php");width:350px;height:75px}
+	.framebannerbg table::after{top:0;left:350px;position:absolute;content:url("http://freewar.zocker.eu/vvvg.php");width:350px;height:75px}
+	.framebannerbg td[align="center"]{position: absolute;top:0;left:914px;text-align:left}
+/* text classes */
+	.chattext 		{ color: #000000; font-size: 13px; }
+	.chattextscream		{ color: #004DA7; font-size: 13px; }
+	.chattextclan 		{ color: #D20000; font-size: 13px; }
+	.chattextworldsay 	{ color: #000000; background-color: #C1CEF9; font-size: 13px; }
+	.chattextwhisper 	{ color: #006600; font-size: 13px; }
+	.healthmed		{ color: #FF8000; }
+	.healthok 		{ color: #309000; }
+	.healthcritical 	{ color: #D20000; }
+	.chatpics 		{ visibility: visible; }
+
+/* Wetter */
+	.chattextinfo 		{ color: #A37300; font-size: 13px; } 	/* normales Wetter */
+	.chattextinfo 		{ font-style: italic; }
+	.chattextinfo:before 	{ content: "Bemerkenswert: "; font-weight: bold; color: #A37300; } /* Bemerkenswertzeile - l?schen/rauskommentieren wenn unerw?nscht */
+
+
+
+	.framechatformbg 	{ background-color: #E7E7E7; }
+	.framechattextbg 	{ background-color: #F8F8F8; margin: 10px; margin-top: 5px; margin-bottom: 5px; margin-right: 5px; }
+	.framemainbg 		{ margin: 10px; background-image: url(images/mainbg.jpg); background-repeat: repeat-y; background-position: right; }
+	.frameitembg 		{ margin: 10px; background-color: #DCDCDC; background-image: url(images/itembg.jpg); }
+	.framemapbg 		{ margin: 10px; margin-top: 3px; background-color: #C1BDBA; background-image: url(images/itembg.jpg); }
+	.framemenubg 		{ background-color: #C1BDBA; background-image: url(images/itembg.jpg); }
+
+/* main module */
+	td.mainheader 		{ font-size: 35px; background-image: url(images/headerbg.jpg); }
+	table.areadescription 	{ border: 1px solid #FFDAA9; background-color: #FFF8EF; width: 100%; }
+	td.areadescription 	{ padding: 0px; }
+	.imageborder 		{ border: 1px solid #C85424; background-color: #C85424; margin-right: 1px; margin-bottom: 1px;}
+	p.maincaption 		{ font-weight: bold; font-size: 30px; padding: 1px; padding-left: 1px; background-image: url(images/headerbg.jpg); }
+	p.maincaption2 		{ font-weight: bold; font-size: 12px; padding: 1px; padding-left: 1px; background-image: url(images/bluebg.jpg); }
+	p.maindesc1 		{ padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 1px; width: 300px; }
+	p.maindesc2 		{ border: 1px solid #FFDAA9; background-color: #FFF8EF; width: 100%; }
+	p.listplaceitemsrow 	{ padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+	p.listusersrow 		{ padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+
+/* item module */
+	p.listcaption 		{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; padding-left: 5px; background-image: url(images/button_bg.jpg); }
+	p.listsubcaption 	{ border-bottom: 1px solid #D6CBC2; }
+	p.listrow 		{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+	p.listitemrow 		{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; border-top: 1px solid #D6CBC2; margin-bottom: 3px; }
+	p.listplaceitemsrow 	{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+	.valueincreased 	{ font-weight: bold; color: #ff0000; }
+	.itemamount 		{ font-weight: bold; color: #751700; }
+	.itemequipped 		{ font-weight: bold; color: #ff0000; }
+	.itemmagic 		{ font-weight: bold; color: #008800; }
+	.iteminventorypics 	{ visibility: visible; }
+
+/* map module */
+
+svg.mapstate .group, svg.mapstate .clan { stroke-width: 100%; }
+
+.maptable, .maptable * {
+font-family: Verdana, sans-serif;
+font-size: 22px !important;
+font-weight: bold;
+}
+	svg.mapstate .players {font-size: 22px;
+    text-anchor: end;
+    transform: translate(0px, -30px);
+}
+svg.mapstate .npcs {font-size: 22px;
+    text-anchor: end;
+    transform: translate(48px, 0px);
+}
+	p.positiontext 		{ background-color: #BBBBBB; border: 1px solid #555555; color: #000000; font-size: 10px; margin-left: 0px; margin-right: 0px; margin-bottom: 3px; padding-left: 0px; padding-right: 0px; width: 100%; }
+
+/* main module */
+	p.personlistcaption 	{ border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; background-image: url(images/buttonblue_bg.jpg); }
+	p.itemlistcaption	{ border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; background-image: url(images/buttonorange_bg.jpg); }
+
+/* misc */
+	.borderbg 		{ background-color: #D0CFCF; }
+	img.nocango 		{ background: transparent;}
+	a.nocango 		{ background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+	a.nocango:hover 	{ background: url(images/map/nocango.gif) top left no-repeat; cursor: default;}
+	.abilitymenu 		{ border:0px; border-collapse: collapse; }
+	.abilitymenu tr 	{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; }
+	.abilitymenu td 	{ text-align: right; padding: 2px; padding-left: 5px; border: 1px solid #D6CBC2; }
+	td.c1 			{ text-align: left;}
+	.bold td		{ font-weight:bold;}
+	#plantrow 		{ border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; background-image: url(images/buttongreen_bg.jpg); }
+	.friendlist 		{ border-collapse: collapse; }
+	.friendlist tr 		{ background-color: #ECE9E6; }
+	.friendlist td 		{ padding: 3px; border-bottom: 1px solid #D6CBC2; }
+
+
+
+/* Einstellungen */
+	a[href*="profil.php?action=skip"]:before 	{ content: url(images/check.png); padding-right: 2px; }
+	a[href*="profil.php?action=skip"]:hover 	{ color: #D20000 !important; }
+	a[href*="profil.php?action=show"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=show"]:hover 	{ color: #008800 !important; }
+	a[href*="profil.php?action=enable"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=enable"]:hover 	{ color: #008800 !important; }
+	form > input[name="ownstyle"] 			{ width: 100%; }
+
+/* Item-/Gelduebergabe */
+	.frameitembg a[href*="item.php?action=transfer2"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+	.frameitembg a[href*="item.php?action=moneytransfer3"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+
+
+
+/* Zust?nde blinken beim Auslaufen */
+	span[title*="(2 Minuten)"] { color:#D20000; text-decoration:blink;}
+	span[title*="(1 Minuten)"] { color:#D20000; text-decoration:blink; font-size: larger; font-weight: bold;}
+	span[title*="(0 Minuten)"] { color:#D20000; text-decoration:blink; font-size: larger; font-weight: bold;}
+
+
+
+
+
+/* Rassen der Clanmitglieder im Clanmenu */
+
+	.frameitembg *[title*="Mensch"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="Onlo"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="Natla"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="dunkler"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="Serum"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="Taruner"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+
+
+/* Spezialworldsays ausblenden */
+
+	/* Gelb */
+	p.worldsay table tr[bgcolor="#FFDA47"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#FFDA47"] td	{ display:none; }
+
+	/* Pink */
+	p.worldsay table tr[bgcolor="#FFAEA1"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#FFAEA1"] td 	{ display:none; }
+
+	/* Orange */
+	p.worldsay table tr[bgcolor="#F8A370"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#F8A370"] td 	{ display:none; }
+
+/* Inventar-Platzschaffende ?nderungen */
+	p.listcaption + p.listrow .small b + b 		{ margin: 0 0 0 -6px; }
+	p.listcaption + p.listrow .small b + b:before 	{ content: " | "; background: #ECE9E6; }
+
+	p.listcaption + p + p + p + p + p + p + p.listrow .valueincreased, p.listcaption + p + p + p + p + p + p + p + p.listrow .valueincreased, p.listcaption + p + p + p + p + p + p + p + p + p.listrow .valueincreased { display:inline-block; width:150px; }
+	p.listcaption + p + p + p + p + p + p + p.listrow, p.listcaption + p + p + p + p + p + p + p + p.listrow, p.listcaption + p + p + p + p + p + p + p + p +p.listrow { overflow:hidden; white-space:nowrap; }
+	
+	/* Modified by Cembon */
+	p[title~="Zustand:"] a { font-size: 0; }
+	p[title~="Zustand:"] a:before { content: "Waffe"; font-size: 12px; }	
+	
+	.valueincreased 				{color:#309000; font-size: smaller;}
+
+ 	#phasespacer 					{display:none;}
+
+	#fastspell1, #fastspell2, #fastspell3, #fastspell4, #fastspell5, #fastspell6, #fastspell7, #fastspell8, #fastspell9 { margin-top: -1px;}
+	#fastspell 					{margin: -10px 5px 0px 0px; }
+	#fastspell td 					{padding: 0px 5px 0px 0px;}
+
+	.frameitembg 					{ margin: 10px; margin-top: 1px; background-color: #DCDCDC; background-image: url(images/itembg.jpg); }
+	.frameitembg img[src$="item_divider.gif"] 	{margin-top: -5px;height: 9px;}
+
+/*Bilder verkleinern (Vote/Brief/Sieg/Niederlage) */
+	img[src$="brief.jpg"] 						{width: 100px; }
+	img[src$="sieg.jpg"] 						{ width: 50px; }
+	img[src$="niederlage.jpg"] 					{ width: 50px; }
+	img[src="http://voting.gdynamite.de/images/gd_animbutton.gif"] 	{width: 25px !important; }
+	img[src="http://www.gamessphere.de/img/graphics/vote.gif"] 	{width: 25px;}
+	img[src="http://www.freewar.de/images/vote.gif"] 		{width: 25px !important; }
+
+/*Cursor Fix*/
+	*[onclick] 		{ cursor: pointer; }
+
+/*Texteingabe gr??er: Modnachricht, Feuervogel, Post, Postvogel, Notizzettel...*/
+	.frameitembg textarea 	{ width: 100%; height: 50%;}
+	.framemainbg textarea	{ width: 100% !important; height: 70% !important; }
+
+/*Sponsorsterne*/
+	img[src$="sponsor.gif"] 	{ margin-right: 1px; }
+	img[src$="sponsor2.gif"] 	{ margin-right: 1px; }
+	img[src$="sponsor3.gif"]	{ margin-right: 1px; }
+    
+/* inv fix */
+.frameitembg{
+ overflow-x: hidden;
+ }
+ 
+ #listrow_int ~ p.listrow[title$="100%"] a::after {
+    position: absolute;
+    right: 20px;
+ }
+ 
+ .aggressivenpc {
+	color:#d00;
+	display:inline-block;
+	padding-right:3px
+}
+/* von Teepflanze geklaut */
+
+/*gigantische */
+img[src$="spindel.gif"] {
+background: rgba(255, 113, 113, 0.71) !important;
+border: 2px inset rgb(53, 53, 53)!important;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+/*klein */
+img[src$="spindel2.gif"] {
+background: rgba(127, 253, 103, 0.57) !important;
+border: 2px inset rgb(53, 53, 53)!important;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+/*normale */
+img[src$="spindel3.gif"] {
+background: rgba(255, 252, 89, 0.76)!important;
+border: 2px inset rgb(53, 53, 53)!important;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;}
+
+/* misc */
+.borderbg { background-color: #D0CFCF; }
+
+/* agressive npcs blinken */
+	.aggressivenpc	{ color: #FF0000; font-weight: bold; text-decoration: blink; }
+/* zustaende blinken beim auslaufen */
+	span[title*="(3 Minuten)"], span[title*="(2 Minuten)"], span[title*="(1 Minuten)"], span[title*="(0 Minuten)"], span[title*="(wenigen Sekunden)"], span[title*="()"]	{ text-decoration: blink; }
+/* rassen der clanmitglieder im clanmenue anzeigen */
+	.frameitembg *[title*="Mensch"]:after, 
+.frameitembg *[title*="Onlo"]:after, .frameitembg *[title*="Natla"]:after, .frameitembg *[title*="dunkler"]:after, .frameitembg *[title*="Serum"]:after, .frameitembg *[title*="Taruner"]:after	{ content: " (" attr(title) ")"; color: #9F9F9F; display: block; }
+/* nicht begehbare felder markieren */
+	img.nocango		{ background-color: transparent; }
+	a.nocango		{ background-color: transparent; width: 50px; height: 50px; border: 0px; display: block; }
+	a.nocango:hover	{ background-image: url(http://fwgott.de/style/images/nocango.gif); background-repeat: no-repeat; background-position: top left; }
+/* Runenpuzzle mit Zahlen statt Bildern */
+
+	img[src$="minigame/a1.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/1.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a2.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/2.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a3.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/3.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a4.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/4.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a5.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/5.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a6.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(../images/Runenpuzzel/6.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+/* waffenzustand direkt hinter der waffe anzeigen */
+	p[title$="100%"]:after, p[title$="99%"]:after, p[title$="98%"]:after, p[title$="97%"]:after, p[title$="96%"]:after, 
+	p[title$="95%"]:after, p[title$="94%"]:after, p[title$="93%"]:after, p[title$="92%"]:after, p[title$="91%"]:after, 
+	p[title$="90%"]:after, p[title$="89%"]:after, p[title$="88%"]:after, p[title$="87%"]:after, p[title$="86%"]:after, 
+	p[title$="85%"]:after, p[title$="84%"]:after, p[title$="83%"]:after, p[title$="82%"]:after, p[title$="81%"]:after, 
+	p[title$="80%"]:after, p[title$="79%"]:after, p[title$="78%"]:after, p[title$="77%"]:after, p[title$="76%"]:after, 
+	p[title$="75%"]:after, p[title$="74%"]:after, p[title$="73%"]:after, p[title$="72%"]:after, p[title$="71%"]:after, 
+	p[title$="70%"]:after, p[title$="69%"]:after, p[title$="68%"]:after, p[title$="67%"]:after, p[title$="66%"]:after, 
+	p[title$="65%"]:after, p[title$="64%"]:after, p[title$="63%"]:after, p[title$="62%"]:after, p[title$="61%"]:after, 
+	p[title$="60%"]:after, p[title$="59%"]:after, p[title$="58%"]:after, p[title$="57%"]:after, p[title$="56%"]:after, 
+	p[title$="55%"]:after, p[title$="54%"]:after, p[title$="53%"]:after, p[title$="52%"]:after, p[title$="51%"]:after, 
+	p[title$="50%"]:after, p[title$="49%"]:after, p[title$="48%"]:after, p[title$="47%"]:after, p[title$="46%"]:after, 
+	p[title$="45%"]:after, p[title$="44%"]:after, p[title$="43%"]:after, p[title$="42%"]:after, p[title$="41%"]:after, 
+	p[title$="40%"]:after, p[title$="39%"]:after, p[title$="38%"]:after, p[title$="37%"]:after, p[title$="36%"]:after, 
+	p[title$="35%"]:after, p[title$="34%"]:after, p[title$="33%"]:after, p[title$="32%"]:after, p[title$="31%"]:after, 
+	p[title$="30%"]:after, p[title$="29%"]:after, p[title$="28%"]:after, p[title$="27%"]:after, p[title$="26%"]:after, 
+	p[title$="25%"]:after, p[title$="24%"]:after, p[title$="23%"]:after, p[title$="22%"]:after, p[title$="21%"]:after, 
+	p[title$="20%"]:after, p[title$="19%"]:after, p[title$="18%"]:after, p[title$="17%"]:after, p[title$="16%"]:after, 
+	p[title$="15%"]:after, p[title$="14%"]:after, p[title$="13%"]:after, p[title$="12%"]:after, p[title$="11%"]:after, 
+	p[title$="10%"]:after, p[title$=" 9%"]:after, p[title$=" 8%"]:after, p[title$=" 7%"]:after, p[title$=" 6%"]:after	
+	{ color: #309000; font-size: smaller; }
+	p[title$="100%"]:after	{ content: " (100%)"; }
+	p[title$="99%"]:after	{ content: " (99%)"; }
+	p[title$="98%"]:after	{ content: " (98%)"; }
+	p[title$="97%"]:after	{ content: " (97%)"; }
+	p[title$="96%"]:after	{ content: " (96%)"; }
+	p[title$="95%"]:after	{ content: " (95%)"; }
+	p[title$="94%"]:after	{ content: " (94%)"; }
+	p[title$="93%"]:after	{ content: " (93%)"; }
+	p[title$="92%"]:after	{ content: " (92%)"; }
+	p[title$="91%"]:after	{ content: " (91%)"; }
+	p[title$="90%"]:after	{ content: " (90%)"; }
+	p[title$="89%"]:after	{ content: " (89%)"; }
+	p[title$="88%"]:after	{ content: " (88%)"; }
+	p[title$="87%"]:after	{ content: " (87%)"; }
+	p[title$="86%"]:after	{ content: " (86%)"; }
+	p[title$="85%"]:after	{ content: " (85%)"; }
+	p[title$="84%"]:after	{ content: " (84%)"; }
+	p[title$="83%"]:after	{ content: " (83%)"; }
+	p[title$="82%"]:after	{ content: " (82%)"; }
+	p[title$="81%"]:after	{ content: " (81%)"; }
+	p[title$="80%"]:after	{ content: " (80%)"; }
+	p[title$="79%"]:after	{ content: " (79%)"; }
+	p[title$="78%"]:after	{ content: " (78%)"; }
+	p[title$="77%"]:after	{ content: " (77%)"; }
+	p[title$="76%"]:after	{ content: " (76%)"; }
+	p[title$="75%"]:after	{ content: " (75%)"; }
+	p[title$="74%"]:after	{ content: " (74%)"; }
+	p[title$="73%"]:after	{ content: " (73%)"; }
+	p[title$="72%"]:after	{ content: " (72%)"; }
+	p[title$="71%"]:after	{ content: " (71%)"; }
+	p[title$="70%"]:after	{ content: " (70%)"; }
+	p[title$="69%"]:after	{ content: " (69%)"; }
+	p[title$="68%"]:after	{ content: " (68%)"; }
+	p[title$="67%"]:after	{ content: " (67%)"; }
+	p[title$="66%"]:after	{ content: " (66%)"; }
+	p[title$="65%"]:after	{ content: " (65%)"; }
+	p[title$="64%"]:after	{ content: " (64%)"; }
+	p[title$="63%"]:after	{ content: " (63%)"; }
+	p[title$="62%"]:after	{ content: " (62%)"; }
+	p[title$="61%"]:after	{ content: " (61%)"; }
+	p[title$="60%"]:after	{ content: " (60%)"; }
+	p[title$="59%"]:after	{ content: " (59%)"; }
+	p[title$="58%"]:after	{ content: " (58%)"; }
+	p[title$="57%"]:after	{ content: " (57%)"; }
+	p[title$="56%"]:after	{ content: " (56%)"; }
+	p[title$="55%"]:after	{ content: " (55%)"; }
+	p[title$="54%"]:after	{ content: " (54%)"; }
+	p[title$="53%"]:after	{ content: " (53%)"; }
+	p[title$="52%"]:after	{ content: " (52%)"; }
+	p[title$="51%"]:after	{ content: " (51%)"; }
+	p[title$="50%"]:after	{ content: " (50%)"; }
+	p[title$="49%"]:after	{ content: " (49%)"; }
+	p[title$="48%"]:after	{ content: " (48%)"; }
+	p[title$="47%"]:after	{ content: " (47%)"; }
+	p[title$="46%"]:after	{ content: " (46%)"; }
+	p[title$="45%"]:after	{ content: " (45%)"; }
+	p[title$="44%"]:after	{ content: " (44%)"; }
+	p[title$="43%"]:after	{ content: " (43%)"; }
+	p[title$="42%"]:after	{ content: " (42%)"; }
+	p[title$="41%"]:after	{ content: " (41%)"; }
+	p[title$="40%"]:after	{ content: " (40%)"; }
+	p[title$="39%"]:after	{ content: " (39%)"; }
+	p[title$="38%"]:after	{ content: " (38%)"; }
+	p[title$="37%"]:after	{ content: " (37%)"; }
+	p[title$="36%"]:after	{ content: " (36%)"; }
+	p[title$="35%"]:after	{ content: " (35%)"; }
+	p[title$="34%"]:after	{ content: " (34%)"; }
+	p[title$="33%"]:after	{ content: " (33%)"; }
+	p[title$="32%"]:after	{ content: " (32%)"; }
+	p[title$="31%"]:after	{ content: " (31%)"; }
+	p[title$="30%"]:after	{ content: " (30%)"; }
+	p[title$="29%"]:after	{ content: " (29%)"; }
+	p[title$="28%"]:after	{ content: " (28%)"; }
+	p[title$="27%"]:after	{ content: " (27%)"; }
+	p[title$="26%"]:after	{ content: " (26%)"; }
+	p[title$="25%"]:after	{ content: " (25%)"; }
+	p[title$="24%"]:after	{ content: " (24%)"; }
+	p[title$="23%"]:after	{ content: " (23%)"; }
+	p[title$="22%"]:after	{ content: " (22%)"; }
+	p[title$="21%"]:after	{ content: " (21%)"; }
+	p[title$="20%"]:after	{ content: " (20%)"; }
+	p[title$="19%"]:after	{ content: " (19%)"; }
+	p[title$="18%"]:after	{ content: " (18%)"; }
+	p[title$="17%"]:after	{ content: " (17%)"; }
+	p[title$="16%"]:after	{ content: " (16%)"; }
+	p[title$="15%"]:after	{ content: " (15%)"; }
+	p[title$="14%"]:after	{ content: " (14%)"; }
+	p[title$="13%"]:after	{ content: " (13%)"; }
+	p[title$="12%"]:after	{ content: " (12%)"; }
+	p[title$="11%"]:after	{ content: " (11%)"; }
+	p[title$="10%"]:after	{ content: " (10%)"; }
+	p[title$=" 9%"]:after	{ content: " (9%)"; }
+	p[title$=" 8%"]:after	{ content: " (8%)"; }
+	p[title$=" 7%"]:after	{ content: " (7%)"; }
+	p[title$=" 6%"]:after	{ content: " (6%)"; }
+	p[title$=" 5%"]:after	{ content: " (5%)"; color: #D20000; }
+	p[title$=" 4%"]:after	{ content: " (4%)"; color: #D20000; text-decoration:blink; }
+	p[title$=" 3%"]:after	{ content: " (3%)"; color: #FF0000; font-size: larger; text-decoration:blink; }
+	p[title$=" 2%"]:after	{ content: " (2%)"; color: #FF0000; font-size: larger; text-decoration:blink; }
+	p[title$=" 1%"]:after	{ content: " (1%)"; color: #FF0000; font-size: larger; text-decoration:blink; }
+
+
+/* sichere orte auf der minimap anzeigen */
+	/* anatubien */
+		#mapx84y100 a:after,
+		#mapx89y101 a:after,
+		#mapx89y104 a:after,
+		#mapx88y105 a:after,
+	/* belpharia */
+		#mapx184y139 a:after,
+		#mapx187y139 a:after,
+		#mapx185y140 a:after,
+	/* buran */
+		#mapx86y85 a:after,
+		#mapx87y87 a:after,
+		#mapx85y90 a:after,
+	/* delos */
+		#mapx65y90 a:after,
+		#mapx66y90 a:after,
+		#mapx68y94 a:after,
+	/* dorea */
+		#mapx119y122 a:after,
+	/* dranar */
+		#mapx56y100 a:after,
+	/* duesterfrostinsel */
+		#mapx804y806 a:after,
+	/* ferdolien */
+		#mapx100y88 a:after,
+		#mapx109y91 a:after,
+		#mapx107y93 a:after,
+		#mapx100y94 a:after,
+		#mapx104y94 a:after,
+		#mapx106y95 a:after,
+		#mapx97y96 a:after,
+	/* gasthaus */
+		#mapx-19999y-19999 a:after,
+		#mapx-19998y-19999 a:after,
+		#mapx-19997y-19999 a:after,
+		#mapx-19999y-19998 a:after,
+		#mapx-19998y-19998 a:after,
+		#mapx-19997y-19998 a:after,
+		#mapx-19999y-19997 a:after,
+		#mapx-19998y-19997 a:after,
+		#mapx-19997y-19997 a:after,
+		#mapx-19998y-19996 a:after,
+	/* gasthaus flur */
+		#mapx-19993y-19999 a:after,
+		#mapx-19994y-19998 a:after,
+		#mapx-19993y-19998 a:after,
+		#mapx-19992y-19998 a:after,
+		#mapx-19991y-19998 a:after,
+		#mapx-19992y-19997 a:after,
+	/* gobos */
+		#mapx78y97 a:after,
+		#mapx76y98 a:after,
+		#mapx80y99 a:after,
+		#mapx74y101 a:after,
+		#mapx77y101 a:after,
+		#mapx76y103 a:after,
+		#mapx76y104 a:after,
+	/* grotte des todes */
+		#mapx-827y-919 a:after,
+	/* goettertempel */
+		#mapx-471y-473 a:after,
+		#mapx-470y-473 a:after,
+		#mapx-469y-473 a:after,
+		#mapx-467y-473 a:after,
+		#mapx-471y-472 a:after,
+		#mapx-470y-472 a:after,
+		#mapx-469y-472 a:after,
+		#mapx-467y-472 a:after,
+		#mapx-471y-471 a:after,
+		#mapx-470y-471 a:after,
+		#mapx-469y-471 a:after,
+		#mapx-468y-471 a:after,
+		#mapx-467y-471 a:after,
+		#mapx-466y-471 a:after,
+		#mapx-470y-470 a:after,
+	/* hewien */
+		#mapx90y88 a:after,
+		#mapx88y89 a:after,
+		#mapx89y89 a:after,
+		#mapx92y89 a:after,
+		#mapx87y90 a:after,
+		#mapx92y92 a:after,
+	/* kampfgebiet */
+		#mapx-1299y-1399 a:after,
+		#mapx-1298y-1399 a:after,
+		#mapx-1294y-1393 a:after,
+	/* kanobien */
+		#mapx71y101 a:after,
+		#mapx70y102 a:after,
+	/* kathedrale */
+		#mapx-500y-502 a:after,
+		#mapx-499y-502 a:after,
+		#mapx-500y-501 a:after,
+		#mapx-500y-500 a:after,
+	/* keller der post */
+		#mapx-100y-95 a:after,
+	/* keller des wirtshauses */
+		#mapx-10001y-10011 a:after,
+	/* kerdis */
+		#mapx93y113 a:after,
+	/* kolun */
+		#mapx66y85 a:after,
+	/* konlir */
+		#mapx96y99 a:after,
+		#mapx97y99 a:after,
+		#mapx100y100 a:after,
+		#mapx96y101 a:after,
+		#mapx97y101 a:after,
+		#mapx98y101 a:after,
+		#mapx96y102 a:after,
+		#mapx97y102 a:after,
+		#mapx98y102 a:after,
+		#mapx101y102 a:after,
+		#mapx99y103 a:after,
+	/* krato */
+		#mapx58y106 a:after,
+	/* kuridan */
+		#mapx114y98 a:after,
+		#mapx117y100 a:after,
+		#mapx116y101 a:after,
+		#mapx117y106 a:after,
+		#mapx117y107 a:after,
+	/* lardikia */
+		#mapx117y113 a:after,
+		#mapx120y115 a:after,
+	/* laree */
+		#mapx51y73 a:after,
+		#mapx51y75 a:after,
+		#mapx52y75 a:after,
+		#mapx56y75 a:after,
+		#mapx44y76 a:after,
+		#mapx53y76 a:after,
+		#mapx54y75 a:after,
+		#mapx54y76 a:after,
+		#mapx55y76 a:after,
+		#mapx53y77 a:after,
+		#mapx54y77 a:after,
+		#mapx49y83 a:after,
+	/* latenia */
+		#mapx96y84 a:after,
+		#mapx92y87 a:after,
+	/* loranien */
+		#mapx84y112 a:after,
+		#mapx87y112 a:after,
+		#mapx86y113 a:after,
+		#mapx81y114 a:after,
+		#mapx82y114 a:after,
+		#mapx78y115 a:after,
+		#mapx79y115 a:after,
+		#mapx80y115 a:after,
+		#mapx81y115 a:after,
+		#mapx82y115 a:after,
+		#mapx83y115 a:after,
+		#mapx84y115 a:after,
+		#mapx85y115 a:after,
+		#mapx77y116 a:after,
+		#mapx78y116 a:after,
+		#mapx79y116 a:after,
+		#mapx80y116 a:after,
+		#mapx81y116 a:after,
+		#mapx82y116 a:after,
+		#mapx83y116 a:after,
+		#mapx84y116 a:after,
+		#mapx85y116 a:after,
+		#mapx86y116 a:after,
+		#mapx79y117 a:after,
+		#mapx80y117 a:after,
+		#mapx81y117 a:after,
+		#mapx82y117 a:after,
+		#mapx83y117 a:after,
+		#mapx84y117 a:after,
+		#mapx85y117 a:after,
+		#mapx80y118 a:after,
+		#mapx81y118 a:after,
+		#mapx83y118 a:after,
+		#mapx80y119 a:after,
+	/* mentoran */
+		#mapx103y115 a:after,
+		#mapx101y116 a:after,
+		#mapx96y117 a:after,
+		#mapx101y117 a:after,
+		#mapx103y117 a:after,
+		#mapx99y118 a:after,
+		#mapx101y119 a:after,
+		#mapx98y120 a:after,
+	/* narubia */
+		#mapx501y54 a:after,
+		#mapx507y57 a:after,
+		#mapx508y57 a:after,
+	/* nawor */
+		#mapx104y104 a:after,
+		#mapx106y106 a:after,
+		#mapx113y106 a:after,
+		#mapx100y107 a:after,
+		#mapx105y111 a:after,
+		#mapx109y111 a:after,
+		#mapx110y111 a:after,
+	/* nomadenzelt */
+		#mapx-105y-95 a:after,
+	/* orewu */
+		#mapx108y113 a:after,
+		#mapx114y114 a:after,
+		#mapx110y115 a:after,
+	/* plefir */
+		#mapx76y110 a:after,
+		#mapx79y110 a:after,
+	/* reikan */
+		#mapx96y106 a:after,
+		#mapx95y108 a:after,
+		#mapx96y110 a:after,
+		#mapx94y111 a:after,
+		#mapx98y111 a:after,
+		#mapx95y112 a:after,
+	/* ruhmeshalle */
+		#mapx-90y-90 a:after,
+	/* ruward */
+		#mapx72y107 a:after,
+		#mapx74y107 a:after,
+	/* salthos */
+		#mapx104y131 a:after,
+		#mapx103y132 a:after,
+		#mapx104y132 a:after,
+		#mapx105y132 a:after,
+		#mapx101y133 a:after,
+		#mapx102y133 a:after,
+		#mapx103y133 a:after,
+		#mapx104y133 a:after,
+		#mapx105y133 a:after,
+		#mapx106y133 a:after,
+		#mapx107y133 a:after,
+		#mapx101y134 a:after,
+		#mapx102y134 a:after,
+		#mapx103y134 a:after,
+		#mapx104y134 a:after,
+		#mapx105y134 a:after,
+		#mapx106y134 a:after,
+		#mapx107y134 a:after,
+		#mapx108y134 a:after,
+		#mapx100y135 a:after,
+		#mapx101y135 a:after,
+		#mapx102y135 a:after,
+		#mapx103y135 a:after,
+		#mapx104y135 a:after,
+		#mapx105y135 a:after,
+		#mapx106y135 a:after,
+		#mapx102y136 a:after,
+		#mapx103y136 a:after,
+		#mapx104y136 a:after,
+		#mapx108y136 a:after,
+	/* sutranien */
+		#mapx71y90 a:after,
+		#mapx73y90 a:after,
+		#mapx75y90 a:after,
+		#mapx78y93 a:after,
+	/* terasi */
+		#mapx68y109 a:after,
+		#mapx65y112 a:after,
+		#mapx68y116 a:after,
+		#mapx69y116 a:after,
+	/* tirachli */
+		#mapx36y96 a:after,
+		#mapx44y96 a:after,
+	/* torihn */
+		#mapx122y91 a:after,
+		#mapx115y94 a:after,
+		#mapx111y96 a:after,
+	/* vergessene kathedrale */
+		#mapx-286y-472 a:after,
+	/* vergessenes tal */
+		#mapx82y92 a:after,
+	/* wald des einsamen baumes */
+		#mapx92y99 a:after,
+		#mapx94y100 a:after,
+		#mapx93y101 a:after,
+		#mapx91y104 a:after,
+		#mapx95y104 a:after,
+		#mapx92y105 a:after,
+	/* wilisien */
+		#mapx111y82 a:after,
+		#mapx110y83 a:after,
+		#mapx111y83 a:after,
+		#mapx112y83 a:after,
+	/* wurzeln */
+		#mapx-448y-446 a:after,
+	/* zelle */
+		#mapx-100y-105 a:after,
+		#mapx-100y-104 a:after
+		{ content: url(images/save.png); z-index: 2; width: 50px; position: absolute; margin-left:-50px; }
+/* angriffslinks vergroessern */
+a[href*="action=chasenpc"] { font-size: 26px; }
+a[href*="action=slapuser"] { font-size: 0px; }
+a[href*="action=attackuser"]	{ font-size: 500px; }
+a[href*="action=attackuser&attmode=1"]	{ font-size: 13px!important; }
+a[href*="action=attackmenu"]	{ font-size: 30px; }
+/* npc schnellangriffslinks vergroessern */
+a.fastattack	{ font-size: 26px; }
+
+/* item nehmen link vergroessern */
+
+a[href*="action=take"] {font-weight: bold; font-size: 26px; float: right;}
+.areadescription ~ table { width: 100%; }
+
+a[href="main.php?arrive_eval=sell"] {float: right;}
+
+/* Notruf rechtsbündig */
+	[href*="clanmenu.php?action=sos"] {display: block; font-weight: bold; text-align: right;} /* Nicht optimal gelöst */
+
+/* Agressive NPC blinken */
+	.aggressivenpc 		   { font-weight: bold; color: #FF0000; text-decoration:blink; font-weight: bold;}
+
+/* Aggressive NPCs auf der Karte */
+	.framemapbg td[id^="map"] a { position: relative; text-decoration: none; display: inline-block; width: 50px; height: 50px; }
+
+/* A: 3 */
+#mapx-508y-376 a:after, #mapx-426y-298 a:after, #mapx-428y-297 a:after, #mapx-427y-297 a:after, #mapx-425y-297 a:after, #mapx-427y-296 a:after, #mapx-426y-296 a:after { content: "3"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 5 */
+#mapx-10001y-10004 a:after, #mapx-645y-144 a:after { content: "5"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 9 */
+#mapx-827y-914 a:after, #mapx-826y-912 a:after, #mapx-823y-912 a:after, #mapx-825y-911 a:after, #mapx-822y-910 a:after, #mapx-826y-908 a:after, #mapx-823y-906 a:after, #mapx-824y-905 a:after, #mapx-826y-904 a:after, #mapx-823y-903 a:after { content: "9"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 10 - 2630 */
+#mapx-826y-916 a:after, #mapx-825y-914 a:after, #mapx-827y-913 a:after, #mapx-825y-912 a:after, #mapx-825y-910 a:after, #mapx-827y-909 a:after, #mapx-823y-908 a:after, #mapx-823y-905 a:after, #mapx-826y-903 a:after, #mapx-230y-538 a:after { content: "10 - 2630"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 12 */
+#mapx-348y-699 a:after, #mapx-347y-699 a:after, #mapx-349y-698 a:after, #mapx-348y-698 a:after, #mapx-347y-698 a:after, #mapx-349y-697 a:after, #mapx-348y-697 a:after, #mapx-347y-697 a:after, #mapx-346y-697 a:after, #mapx-348y-696 a:after, #mapx-347y-696 a:after, #mapx-346y-696 a:after, #mapx-348y-695 a:after, #mapx-347y-695 a:after, #mapx-346y-695 a:after, #mapx-345y-695 a:after, #mapx-348y-694 a:after, #mapx-347y-694 a:after, #mapx-346y-694 a:after, #mapx-345y-694 a:after, #mapx-348y-693 a:after, #mapx-347y-693 a:after, #mapx-346y-693 a:after, #mapx-345y-693 a:after { content: "12"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 15 */
+#mapx-508y-377 a:after, #mapx-509y-376 a:after { content: "15"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 25 */
+#mapx-226y-540 a:after, #mapx-228y-539 a:after, #mapx-224y-539 a:after, #mapx-229y-538 a:after, #mapx-227y-538 a:after, #mapx-225y-538 a:after { content: "25"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 25 / 710 */
+#mapx-224y-541 a:after { content: "25 / 710"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 34 */
+#mapx-605y-267 a:after, #mapx-608y-266 a:after, #mapx-607y-266 a:after, #mapx-606y-266 a:after, #mapx-605y-266 a:after, #mapx-604y-265 a:after, #mapx-610y-264 a:after, #mapx-602y-264 a:after, #mapx-601y-263 a:after, #mapx-613y-262 a:after, #mapx-611y-262 a:after, #mapx-609y-262 a:after, #mapx-607y-262 a:after, #mapx-600y-262 a:after, #mapx-606y-261 a:after, #mapx-605y-260 a:after, #mapx-601y-260 a:after, #mapx-603y-260 a:after { content: "34"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 35 */
+#mapx-428y-298 a:after, #mapx-424y-298 a:after, #mapx-426y-297 a:after, #mapx-425y-296 a:after { content: "35"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 50 */
+#mapx-645y-148 a:after, #mapx-643y-148 a:after, #mapx-647y-145 a:after, #mapx-647y-143 a:after { content: "50"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 73 */
+#mapx-167y-857 a:after, #mapx-163y-857 a:after, #mapx-163y-856 a:after, #mapx-165y-855 a:after { content: "73"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 271 */
+#mapx-826y-918 a:after, #mapx-825y-915 a:after, #mapx-826y-914 a:after, #mapx-826y-911 a:after, #mapx-827y-910 a:after, #mapx-825y-909 a:after, #mapx-822y-909 a:after, #mapx-825y-904 a:after { content: "271"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 465 */
+#mapx-738y-230 a:after, #mapx-736y-230 a:after, #mapx-738y-229 a:after, #mapx-737y-229 a:after, #mapx-736y-229 a:after, #mapx-740y-228 a:after, #mapx-739y-228 a:after, #mapx-737y-228 a:after, #mapx-736y-227 a:after { content: "465"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 666 */
+#mapx-199y-829 a:after, #mapx-199y-828 a:after, #mapx-198y-828 a:after, #mapx-199y-827 a:after { content: "666"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 710 */
+#mapx-225y-541 a:after { content: "710"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 1040 / 35 */
+#mapx-426y-299 a:after { content: "1040 / 35"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 1600 */
+#mapx-846y-379 a:after, #mapx-849y-378 a:after, #mapx-843y-377 a:after, #mapx-842y-377 a:after, #mapx-845y-376 a:after, #mapx-840y-376 a:after, #mapx-848y-374 a:after, #mapx-844y-374 a:after { content: "1600"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 1630 */
+#mapx-223y-541 a:after, #mapx-225y-540 a:after { content: "1630"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 2710 */
+#mapx-821y-910 a:after { content: "2710"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 4200 */
+#mapx-844y-377 a:after { content: "4200"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* A: 5300 */
+#mapx-845y-375 a:after { content: "5300"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+

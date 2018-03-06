@@ -1,0 +1,252 @@
+/* sichere orte auf der minimap anzeigen */
+	/* anatubien */
+		#mapx84y100 a:after,
+		#mapx89y101 a:after,
+		#mapx89y104 a:after,
+		#mapx88y105 a:after,
+	/* belpharia */
+		#mapx184y139 a:after,
+		#mapx187y139 a:after,
+		#mapx185y140 a:after,
+	/* buran */
+		#mapx86y85 a:after,
+		#mapx87y87 a:after,
+		#mapx85y90 a:after,
+	/* delos */
+		#mapx66y90 a:after,
+		#mapx68y94 a:after,
+	/* dranar */
+		#mapx56y100 a:after,
+	/* duesterfrostinsel */
+		#mapx804y806 a:after,
+	/* ferdolien */
+		#mapx100y88 a:after,
+		#mapx109y91 a:after,
+		#mapx107y93 a:after,
+		#mapx100y94 a:after,
+		#mapx104y94 a:after,
+		#mapx106y95 a:after,
+		#mapx97y96 a:after,
+	/* gasthaus */
+		#mapx-19999y-19999 a:after,
+		#mapx-19998y-19999 a:after,
+		#mapx-19997y-19999 a:after,
+		#mapx-19999y-19998 a:after,
+		#mapx-19998y-19998 a:after,
+		#mapx-19997y-19998 a:after,
+		#mapx-19999y-19997 a:after,
+		#mapx-19998y-19997 a:after,
+		#mapx-19997y-19997 a:after,
+		#mapx-19998y-19996 a:after,
+	/* gasthaus flur */
+		#mapx-19993y-19999 a:after,
+		#mapx-19994y-19998 a:after,
+		#mapx-19993y-19998 a:after,
+		#mapx-19992y-19998 a:after,
+		#mapx-19991y-19998 a:after,
+		#mapx-19992y-19997 a:after,
+	/* gobos */
+		#mapx78y97 a:after,
+		#mapx76y98 a:after,
+		#mapx80y99 a:after,
+		#mapx74y101 a:after,
+		#mapx77y101 a:after,
+		#mapx76y103 a:after,
+		#mapx76y104 a:after,
+	/* grotte des todes */
+		#mapx-827y-919 a:after,
+	/* goettertempel */
+		#mapx-471y-473 a:after,
+		#mapx-470y-473 a:after,
+		#mapx-469y-473 a:after,
+		#mapx-467y-473 a:after,
+		#mapx-471y-472 a:after,
+		#mapx-470y-472 a:after,
+		#mapx-469y-472 a:after,
+		#mapx-467y-472 a:after,
+		#mapx-471y-471 a:after,
+		#mapx-470y-471 a:after,
+		#mapx-469y-471 a:after,
+		#mapx-468y-471 a:after,
+		#mapx-467y-471 a:after,
+		#mapx-466y-471 a:after,
+		#mapx-470y-470 a:after,
+	/* hewien */
+		#mapx90y88 a:after,
+		#mapx88y89 a:after,
+		#mapx89y89 a:after,
+		#mapx92y89 a:after,
+		#mapx87y90 a:after,
+		#mapx92y92 a:after,
+	/* kampfgebiet */
+		#mapx-1299y-1399 a:after,
+		#mapx-1298y-1399 a:after,
+		#mapx-1294y-1393 a:after,
+	/* kanobien */
+		#mapx71y101 a:after,
+		#mapx70y102 a:after,
+	/* kathedrale */
+		#mapx-500y-502 a:after,
+		#mapx-499y-502 a:after,
+		#mapx-500y-501 a:after,
+		#mapx-500y-500 a:after,
+	/* keller der post */
+		#mapx-100y-95 a:after,
+	/* keller des wirtshauses */
+		#mapx-10001y-10011 a:after,
+	/* kerdis */
+		#mapx93y113 a:after,
+	/* kolun */
+		#mapx66y85 a:after,
+	/* konlir */
+		#mapx96y99 a:after,
+		#mapx97y99 a:after,
+		#mapx100y100 a:after,
+		#mapx96y101 a:after,
+		#mapx97y101 a:after,
+		#mapx98y101 a:after,
+		#mapx96y102 a:after,
+		#mapx97y102 a:after,
+		#mapx98y102 a:after,
+		#mapx101y102 a:after,
+		#mapx99y103 a:after,
+	/* krato */
+		#mapx58y106 a:after,
+	/* kuridan */
+		#mapx114y98 a:after,
+		#mapx117y100 a:after,
+		#mapx116y101 a:after,
+		#mapx117y106 a:after,
+		#mapx117y107 a:after,
+	/* lardikia */
+		#mapx117y113 a:after,
+		#mapx120y115 a:after,
+	/* laree */
+		#mapx51y73 a:after,
+		#mapx51y75 a:after,
+		#mapx52y75 a:after,
+		#mapx56y75 a:after,
+		#mapx44y76 a:after,
+		#mapx53y76 a:after,
+		#mapx54y76 a:after,
+		#mapx55y76 a:after,
+		#mapx53y77 a:after,
+		#mapx54y77 a:after,
+		#mapx49y83 a:after,
+	/* latenia */
+		#mapx96y84 a:after,
+		#mapx92y87 a:after,
+	/* loranien */
+		#mapx84y112 a:after,
+		#mapx87y112 a:after,
+		#mapx86y113 a:after,
+		#mapx81y114 a:after,
+		#mapx82y114 a:after,
+		#mapx78y115 a:after,
+		#mapx79y115 a:after,
+		#mapx80y115 a:after,
+		#mapx81y115 a:after,
+		#mapx82y115 a:after,
+		#mapx83y115 a:after,
+		#mapx84y115 a:after,
+		#mapx85y115 a:after,
+		#mapx77y116 a:after,
+		#mapx78y116 a:after,
+		#mapx79y116 a:after,
+		#mapx80y116 a:after,
+		#mapx81y116 a:after,
+		#mapx82y116 a:after,
+		#mapx83y116 a:after,
+		#mapx84y116 a:after,
+		#mapx85y116 a:after,
+		#mapx86y116 a:after,
+		#mapx79y117 a:after,
+		#mapx80y117 a:after,
+		#mapx81y117 a:after,
+		#mapx82y117 a:after,
+		#mapx83y117 a:after,
+		#mapx84y117 a:after,
+		#mapx85y117 a:after,
+		#mapx80y118 a:after,
+		#mapx81y118 a:after,
+		#mapx83y118 a:after,
+		#mapx80y119 a:after,
+	/* mentoran */
+		#mapx103y115 a:after,
+		#mapx101y116 a:after,
+		#mapx96y117 a:after,
+		#mapx101y117 a:after,
+		#mapx103y117 a:after,
+		#mapx99y118 a:after,
+		#mapx101y119 a:after,
+		#mapx98y120 a:after,
+	/* narubia */
+		#mapx501y54 a:after,
+		#mapx507y57 a:after,
+		#mapx508y57 a:after,
+	/* nawor */
+		#mapx104y104 a:after,
+		#mapx106y106 a:after,
+		#mapx113y106 a:after,
+		#mapx100y107 a:after,
+		#mapx105y111 a:after,
+		#mapx109y111 a:after,
+		#mapx110y111 a:after,
+	/* nomadenzelt */
+		#mapx-105y-95 a:after,
+	/* orewu */
+		#mapx108y113 a:after,
+		#mapx114y114 a:after,
+		#mapx110y115 a:after,
+	/* plefir */
+		#mapx76y110 a:after,
+		#mapx79y110 a:after,
+	/* reikan */
+		#mapx96y106 a:after,
+		#mapx95y108 a:after,
+		#mapx96y110 a:after,
+		#mapx94y111 a:after,
+		#mapx98y111 a:after,
+		#mapx95y112 a:after,
+	/* ruhmeshalle */
+		#mapx-90y-90 a:after,
+	/* ruward */
+		#mapx72y107 a:after,
+		#mapx74y107 a:after,
+	/* sutranien */
+		#mapx71y90 a:after,
+		#mapx73y90 a:after,
+		#mapx75y90 a:after,
+		#mapx78y93 a:after,
+	/* terasi */
+		#mapx68y109 a:after,
+		#mapx65y112 a:after,
+		#mapx68y116 a:after,
+		#mapx69y116 a:after,
+	/* torihn */
+		#mapx122y91 a:after,
+		#mapx115y94 a:after,
+		#mapx111y96 a:after,
+	/* vergessene kathedrale */
+		#mapx-286y-472 a:after,
+	/* vergessenes tal */
+		#mapx82y92 a:after,
+	/* wald des einsamen baumes */
+		#mapx92y99 a:after,
+		#mapx94y100 a:after,
+		#mapx93y101 a:after,
+		#mapx91y104 a:after,
+		#mapx95y104 a:after,
+		#mapx92y105 a:after,
+	/* wilisien */
+		#mapx111y82 a:after,
+		#mapx110y83 a:after,
+		#mapx111y83 a:after,
+		#mapx112y83 a:after,
+	/* wurzeln */
+		#mapx-448y-446 a:after,
+	/* zelle */
+		#mapx-100y-105 a:after,
+		#mapx-100y-104 a:after
+		{ content: url(../images/save.png); z-index: 2; width: 50px; position: absolute; margin-left:-50px; }
+		/* bildquelle: http://fwgott.de/style/images/save.png */
